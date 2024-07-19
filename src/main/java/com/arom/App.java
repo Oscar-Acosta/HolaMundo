@@ -10,6 +10,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        JOptionPane.showMessageDialog(null, "Hola Mundo UWU Manco +_+");
+        JOptionPane.showMessageDialog(null, "Hola Mundo UWU Manco +_+")
     }
 }
