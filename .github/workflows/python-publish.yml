@@ -60,14 +60,12 @@ jobs:
     "sInputPassword": {
       "type": "STRING",
       "string": "contra123"
-    }
-  }
-})
-headers = {
-  'X-Authorization': 'eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiI2Mzk2MTgiLCJjbGllbnRUeXBlIjoiV0VCIiwidGVuYW50VXVpZCI6IjRiNzQxZjQ5LTJkMmItNGE3Yy05ZmM0LThlNjMwZWIyMTYxMyIsIm11bHRpcGxlTG9naW4iOmZhbHNlLCJpYXQiOjE3MjE3MDI2MDIsImV4cCI6MTcyMTcwMzgwMiwiaXNzIjoiQXV0b21hdGlvbkFueXdoZXJlIiwibmFub1RpbWUiOjE1NTQxMzA2MzQ3NTEwMjB9.GCuy_O2_jkopnui_BjXdtCv6YeqFUERYd5BIOlM5eC-sVnjfRoberlQ0jCM9qPTjGwnVYGdlD9KSdmbY2Uct7IvYowccXzOQyCq03Mc_v14t5e7Oz4YVx3udFJdf7Ul1iFuBb1VIOpOwftmn8qyWW4coshJ0NU-hoa4GimPy5N1s93x8q_zisZWoFY7e3T4AJjt3j-8utDuSkyRV4v1zWm8LZ__wUgXWsUrt1BD9egN5U1ksF27fViUNYVrR7Gbv2S7ssGYn9yfdIsp7UzwKCFCKQDzF41G1JeocFH7NOx5T3tF-qN9RjEPsDHQV2VcLwp_Ahf4TjA1HBn1Yba6Vnw',
-  'Content-Type': 'application/json'
-}
- 
-response = requests.request("POST", url, headers=headers, data=payload)
- 
-print(response.text)
+            ]
+          })
+          headers = {
+            'X-Authorization': 'eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiI2Mzk2MTgiLCJjbGllbnRUeXBlIjoiV0VCIiwidGVuYW50VXVpZCI6IjRiNzQxZjQ5LTJkMmItNGE3Yy05ZmM0LThlNjMwZWIyMTYxMyIsIm11bHRpcGxlTG9naW4iOmZhbHNlLCJpYXQiOjE3MjE3MDEyMjMsImV4cCI6MTcyMTcwMjQyMywiaXNzIjoiQXV0b21hdGlvbkFueXdoZXJlIiwibmFub1RpbWUiOjE1NTI3NTQ3MjM1OTIyMDV9.aH29hQTkgwt-EpLVrfc9GXMCkhl10pb5gxyGM6abzz9jnpV--gefVlWOgRxmbSpcY_F8_07r42X-XdXiZLr-VnxAjhiP0_ntlbGPom1u5Kh3qoWvqanfMlxN_wl5PjPPmv9k1Vo-4AXwqxGgyPj3pDyJ6BgA45SVH9hNGYA6k2AXyZNql70RXZ1lom8f90vySmrAuBslnMMGeD0yeeXouuob-jlplhCoZEqyOUb6ZXtsagQdE3DWc7M-AbR0OUbSyH1TW07kw5XrobLmcekcILN57tmg53VQpy9C_ml4ktxpX7Q4kzVPxIkku7dJINs1U5-EE3slf0dF0ujIfRNgSQ',
+            'Content-Type': 'application/json'
+          }
+          response = requests.post(url, headers=headers, data=payload)
+          print(response.text)
+          EOF
